@@ -15,19 +15,18 @@
                 <span class="span-required">o nome precisa de no minimo 3 caracteres</span>
             </div>
             <div>
-                <input type="email" name="email" placeholder="input your email" class="required" id="input">
+                <input type="email" name="email" placeholder="input your email" class="required" id="input" oninput="emailValidate()">
                 <span class="span-required">formato de e-mail invalido</span>
             </div>
             <div>
-                <input type="password" name="password" placeholder="input your password" class="required" id="input">
+                <input type="password" name="password" placeholder="input your password" class="required" id="input" oninput="passwordValidate()">
                 <span class="span-required">a senha precisa de no minimo 8 caracteres</span>
             </div>
             <div>
-                <input type="password" name="password" placeholder="repeat your password" class="required" id="input">
+                <input type="password" name="password" placeholder="repeat your password" class="required" id="input" oninput="repeatPassValidate()">
                 <span class="span-required">senhas desiguais</span>
             </div>
         </form>
-        <button onclick="redColor()">red</button>
     </main>
     <script src="main.js"></script>
 </body>
