@@ -3,6 +3,14 @@ const inputs = document.querySelectorAll('.required')
 const emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]{2,}$/i;
 const span = document.querySelectorAll('.span-required')
 
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    nameValidate()
+    emailValidate()
+    passwordValidate()
+    repeatPassValidate()
+})
+
 function setError(index){
     inputs[index].style.border = '2px solid #FF0000'
     span[index].style.display = 'block'
